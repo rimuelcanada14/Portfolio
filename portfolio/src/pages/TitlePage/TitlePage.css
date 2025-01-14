@@ -1,0 +1,21 @@
+.container-fluid {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.title-type {
+    margin-left: 5px;
+}
+.title-text {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 0;
+}
+.title-btn {
+    color: white;
+    margin-top: 1em;
+    border-radius: 25px;
+}
+.title-btn:hover {
+    background-color: white;
+    color: #3d3d3d;
+}
