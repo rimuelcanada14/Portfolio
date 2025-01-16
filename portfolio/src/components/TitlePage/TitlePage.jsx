@@ -7,7 +7,7 @@ const TitlePage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid title-container" id="title">
       <div className="text-center">
         <p className="text-white">
           I am
@@ -18,9 +18,9 @@ const TitlePage = () => {
             RIMUEL CAÑADA
           </h1>
         </div>
-        <button className="btn border-white title-btn" onClick={() => navigate('/main')}>
+        <a className="btn border-white title-btn" href="#about">
           Know me!
-        </button>
+        </a>
       </div>
     </div>
   );
