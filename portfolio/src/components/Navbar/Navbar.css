@@ -37,6 +37,9 @@
     margin-top: .5em;
     color: white;
 }
+.navbar-nav a:hover {
+    border-bottom: 1px dashed white;
+}
 .navbar-toggle {
     display: none;
 }
