@@ -19,7 +19,7 @@ const SkillsPage = () => {
           <div className="flip-front-s">
             <RxQuestionMarkCircled className="card-icon" />
             <p className="text-end fw-bold skills-title">
-              Front-end<br />Trial
+              Front-end<br />Again
             </p>
           </div>
           <div className="flip-back">
