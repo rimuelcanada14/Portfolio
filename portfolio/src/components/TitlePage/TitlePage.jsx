@@ -1,13 +1,10 @@
 import React from 'react';
 import { ReactTyped } from "react-typed";
 import './TitlePage.css';
-import { useNavigate } from 'react-router-dom';
 
 const TitlePage = () => {
-  const navigate = useNavigate();
-
   return (
-    <div className="container-fluid title-container" id="title">
+    <div className="container-fluid title-container">
       <div className="text-center">
         <p className="text-white">
           I am

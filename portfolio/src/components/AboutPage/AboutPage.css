@@ -5,39 +5,76 @@
     display: flex;
     width: 100vw;
     background-color: #3d3d3d;
-    flex-direction: row;
+    flex-direction: row; /* Default: side-by-side layout */
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 3em;
 }
+
 .about-content {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
+
 .about-title {
     font-size: 27px;
     font-weight: 600;
     margin-top: 4em;
 }
+
 .about-img {
     width: auto;
     height: auto;
     position: relative;
-    margin-top: -5em;
+    margin-top: -2em;
     z-index: 0;
 }
+
 .about-me {
     width: 32em;
     height: auto;
 }
+
 .resume-btn {
     color: white;
     margin-top: 1em;
     border-radius: 25px;
     background-color: transparent;
-    width: 15em;
+    width: 10em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .resume-btn:hover {
+    transition: 0.5s;
     background-color: white;
     color: #3d3d3d;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .about-img {
+        order: -1;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-me {
+        width: 60%;
+        max-width: 20em; 
+    }
+    .about-content {
+        margin-top: -6.5em;
+        margin-bottom: -6em
+    }
+    .resume-btn {
+        margin-top: .3em;
+    }
+
 }
