@@ -93,8 +93,8 @@
         flex-direction: row;
         overflow-x: scroll;
         width: 100vw;
-        gap: 2em;
-        padding-right: 1em;
+        gap: 2.5em;
+        padding-right: 1.8em;
     }
     .skills-titles {
         font-size: 35px;
