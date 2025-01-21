@@ -13,7 +13,7 @@ const SkillsPage = () => {
     setFlipped(newFlipped);
   };
 
-  //for front-end data
+  //for framework data
   const [Fdata, setFData] = useState([]);
   const [Floading, setFLoading] = useState(true);
   //for back-end data
@@ -26,7 +26,7 @@ const SkillsPage = () => {
   useEffect(() => {
     const fetchFData = async () => {
       try {
-        const querySnapshot = await getDocs(collection(db, "frontend"));
+        const querySnapshot = await getDocs(collection(db, "framework"));
         const data = [];
         querySnapshot.forEach((doc) => {
           data.push(doc.data());
@@ -45,7 +45,7 @@ const SkillsPage = () => {
   useEffect(() => {
     const fetchBData = async () => {
       try {
-        const querySnapshot = await getDocs(collection(db, "backend"));
+        const querySnapshot = await getDocs(collection(db, "language"));
         const data = [];
         querySnapshot.forEach((doc) => {
           data.push(doc.data());
@@ -82,13 +82,13 @@ const SkillsPage = () => {
     
   return (
     <div className='container skills-container'>
-      <p className="fw-bold skills-titles">I can do...</p>
+      <p className="fw-bold skills-titles">When I work, I use...</p>
       <div className="skills-card">
         <div className={`flip-card-s ${flipped[0] ? 'flipped' : ''}`} onClick={() => handleFlip(0)}>
           <div className="flip-front-s">
             <RxQuestionMarkCircled className="card-icon" />
             <p className="text-end fw-bold skills-title">
-              Front-end<br />Last Trial
+              Different<br />Frameworks 
             </p>
           </div>
           <div className="flip-back">
@@ -97,9 +97,7 @@ const SkillsPage = () => {
             ) : (
               Fdata.map((item, index) => (
                 <div key={index}>
-                  <p><strong>Name:</strong> {item.name}</p>
-                  <p><strong>Description:</strong> {item.description}</p>
-                  <p><strong>Rating:</strong> {item.rating}</p>
+                  <img src={`./images/${item.image}`} alt={item.name} className='skills-frame'/>
                 </div>
               ))
             )}
@@ -110,18 +108,16 @@ const SkillsPage = () => {
           <div className="flip-front">
             <RxQuestionMarkCircled className="card-icon" />
             <p className="text-end fw-bold skills-title">
-              Back-end<br />development
+              Programming<br />Languages
             </p>
           </div>
-          <div className="flip-back">
-          {Bloading ? (
-                <p>Loading...</p>
+          <div className="flip-back-lang">
+            {Bloading ? (
+              <p>Loading...</p>
             ) : (
               Bdata.map((item, index) => (
-                <div key ={index}>
-                  <p><strong>Name:</strong> {item.name}</p>
-                  <p><strong>Description:</strong> {item.description}</p>
-                  <p><strong>Rating:</strong> {item.rating}</p>
+                <div key={index}>
+                  <img src={`./images/${item.image}`} alt={item.name} className='skills-frame'/>
                 </div>
               ))
             )}
@@ -137,13 +133,11 @@ const SkillsPage = () => {
           </div>
           <div className="flip-back">
           {Dbloading ? (
-                <p>Loading...</p>
+              <p>Loading...</p>
             ) : (
               Dbdata.map((item, index) => (
-                <div key ={index}>
-                  <p><strong>Name:</strong> {item.name}</p>
-                  <p><strong>Description:</strong> {item.description}</p>
-                  <p><strong>Rating:</strong> {item.rating}</p>
+                <div key={index}>
+                  <img src={`./images/${item.image}`} alt={item.name} className='skills-frame'/>
                 </div>
               ))
             )}
