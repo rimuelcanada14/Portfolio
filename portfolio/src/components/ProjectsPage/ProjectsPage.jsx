@@ -38,8 +38,7 @@ const ProjectsPge = () => {
             data.map((item, index) => (
               <div key={index} className = "projects-card">
                 <div className="projects-image">
-                  <img src={`./images/${item.imagep}`} alt={item.name} className='projects-p'/>
-                  <img src={`./images/${item.imagec}`} alt={item.name} className='projects-c'/>
+                  <img src={`./images/${item.image}`} alt={item.name} className='projects-p'/>
                 </div>
                 <div className="projects-des">
                   <p className='projects-name'>{item.name}</p>
