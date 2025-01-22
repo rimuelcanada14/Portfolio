@@ -20,7 +20,7 @@ const ContactPage = () => {
             <a target="_blank" href="https://github.com/rimuelcanada14/" ><IoLogoGithub className="github"/></a>
             <a target="_blank" href="https://www.linkedin.com/in/rimuel-canada-369232274/" ><FaLinkedinIn className="linkedin"/></a>
             <a target="_blank" href="https://www.facebook.com/rimuel.canada.33/" ><FaFacebookSquare className="facebook"/></a>
-            <a target="_blank" href="https://www.facebook.com" className='ig'><SiInstagram /></a>
+            <a target="_blank" href="https://www.instagram.com/melmelelel_?igsh=MXB0cW1ka25jcHkzMQ==" className='ig'><SiInstagram /></a>
         </div>
         <img src={MelCon} className='contact-image'></img>
     </div>
