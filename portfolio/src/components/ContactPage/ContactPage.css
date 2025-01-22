@@ -1,0 +1,43 @@
+.contact-container {
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-image {
+    width: 40vh;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+.icons {
+    font-size: 38px;
+    display: flex;
+    flex-direction: row;
+    gap: .4em;
+    text-decoration: none;
+    color: white;
+    
+}
+.icons a{
+    color: white;
+}
+.github:hover {
+    color: #c29aff;
+    transition: 0.3s;
+}
+.linkedin:hover {
+    color: #0a66c2;
+    transition: 0.3s;
+}
+.facebook:hover {
+    color: #1877f2;
+    transition: 0.3s;
+}
+.ig:hover {
+    color: #bc1888;
+    transition: 0.3s;
+
+}

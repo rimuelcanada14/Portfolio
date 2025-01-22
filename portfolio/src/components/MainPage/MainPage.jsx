@@ -4,6 +4,7 @@ import TitlePage from '../TitlePage/TitlePage'
 import AboutPage from '../AboutPage/AboutPage'
 import SkillsPage from '../SkillsPage/SkillsPage'
 import ProjectsPage from '../ProjectsPage/ProjectsPage'
+import ContactPage from '../ContactPage/ContactPage'
 import Navbar from '../Navbar/Navbar'
 
 const MainPage = () => {
@@ -27,6 +28,10 @@ const MainPage = () => {
 
     <div id="projects">
       <ProjectsPage />
+    </div>
+
+    <div id="contact">
+      <ContactPage />
     </div>
     </>
     
